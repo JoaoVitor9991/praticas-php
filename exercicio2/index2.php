@@ -31,7 +31,7 @@ class Conta
 }
 
 $a = new Conta(1000);
-$a->sacar_valor(200);
+//$a->sacar_valor(200);
 echo $a->sacar_valor(200);
 //echo $a->ver_saldo();
 
