@@ -5,6 +5,7 @@ class Pessoa
     private  $dinheiro = 0;
     public $nome;
     private static $populacao = 0;
+    
 
     public function trabalhar()
     {
