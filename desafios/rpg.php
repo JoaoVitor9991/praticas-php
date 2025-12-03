@@ -16,7 +16,7 @@ class Personagem{
     public function receber_dano($forca_do_inimigo)
     {
         $this->vida -= $forca_do_inimigo;
-        return ("Ai! {$this->nome} tomou {$forca_do_inimigo} de dano e ficou com {$this->vida} de vida.");
+        return ("Ai! {$this->nome} tomou {$forca_do_inimigo} de dano e ficou fodido! {$this->vida} de vida. Brutalmente morto.");
     }
 
     public function atacar($alvo)
@@ -25,6 +25,6 @@ class Personagem{
     }
 }
 
-$amatsu = new Personagem("Amatsu", 100, 80);
+$amatsu = new Personagem("Amatsu", 100, 8000);
 $orc = new Personagem("Orc", 120, 5);
 echo $amatsu->atacar($orc);
