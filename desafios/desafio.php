@@ -15,11 +15,7 @@ class Numero {
 
     public function par_impar()
     {
-        if ($this->numero % 2 == 0){
-            return "Este numero eh par";
-        } else {
-           return "Este numero eh impar!";
-        }
+        return $this->numero % 2 == 0 ? 'par' : 'impar';
     }
 
     public function tabuada()
@@ -41,16 +37,3 @@ class Numero {
     }
 }
 
-$cinco = new Numero(5);
-echo $cinco->get_numero();
-echo "<br>";
-echo $cinco->par_impar();
-echo "<br>";
-echo $cinco->raiz_quadrada();
-echo "<br>";
-echo "<br>";
-$lista_tabuada = $cinco->tabuada();
-
-foreach ($lista_tabuada as $frase){
-    echo $frase . "<br>";
-}
