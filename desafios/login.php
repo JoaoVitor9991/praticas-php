@@ -7,7 +7,7 @@ class Usuario {
 
     public function __construct($nome_que_chegou, $email_que_chegou, $senha_que_chegou)
     {
-        $this->nome = $nome_que_chegou;
+        $this->nome = $nome_que_chegou; 
         $this->email = $email_que_chegou;
         $this->senha = $senha_que_chegou;
     }
