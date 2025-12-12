@@ -9,7 +9,7 @@ $n4 = new Numero(123);
 echo '<pre>';
 
 echo $cinco->get_numero() ."<br>";
-echo $cinco->par_impar() . "<br>";
+echo $cinco->par_impar() . "<br>"; 
 echo $cinco->raiz_quadrada() ."<br>";
 $lista_tabuada = $cinco->tabuada();
 
