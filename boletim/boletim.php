@@ -9,5 +9,21 @@ Class Aluno{
         $this->nome = $nome_que_chegou;
     }
 
-    public function 
+    public function adicionar_nota($valor)
+    {
+        $this->notas[] = $valor;
+    }
+
+    public function calcular_media()
+    {
+        $soma = 0;
+
+        foreach ($this->notas as $nota) {
+            $soma = $soma + $nota;
+        }
+
+        $quantidade = count($this->notas);
+
+        return $soma / $quantidade;
+    }
 }

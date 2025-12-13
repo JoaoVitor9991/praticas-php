@@ -4,7 +4,7 @@ require_once('humano.php');
 
 $entidade = new Humano();
 $dados = [
-    ['m', 'João'],
+    ['m', 'João'], 
     ['f', 'Maria'],
     ['m', 'Pedro'],
     ['x', 'Alien'],
