@@ -2,7 +2,7 @@
 
 require_once('humano.php');
 
-$entidade = new Humano();
+
 $dados = [
     ['m', 'João'], 
     ['f', 'Maria'],
@@ -11,6 +11,9 @@ $dados = [
     ['f', 'Ana'],
     ['?', 'Predador']
 ]; 
+
+$entidade = new Humano();
+
 foreach ($dados as $pessoa){
     $entidade->definir($pessoa[0], $pessoa[1]);
 }
@@ -19,6 +22,7 @@ $masculinos = $entidade->get_masculinos();
 $femininos = $entidade->get_femininos();
 $desconhecidos = $entidade->get_desconhecidos();
 ?>
+
 <h1>Masculinos</h1>
 <ul>
     <?php foreach($masculinos as $nome) { echo "<li>$nome</li>"; } ?>

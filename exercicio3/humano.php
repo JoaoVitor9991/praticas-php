@@ -8,9 +8,9 @@ class Humano {
 
     public function definir($sexo, $nome)
     {
-        if ($sexo == 'M' or $sexo == 'm'){
+        if (strtoupper($sexo) == 'M'){
             $this->masculinos[] = $nome;
-        } elseif ($sexo == 'F' or $sexo == 'f'){
+        } elseif (strtoupper($sexo) == 'F'){
              $this->femininos[] = $nome;
         } else {
             $this->desconhecidos[] = $nome;
