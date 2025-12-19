@@ -24,7 +24,7 @@ class Automovel extends Veiculos
 {
     public function apresentar()
     {
-        return "Este objeto guarda os dados de um Automóvel da marca: " . $this->marca . " e do ano:" . $this->ano;
+        return "Este objeto guarda os dados de um Automóvel da marca: " . $this->marca . " e do ano: " . $this->ano;
     }
 }
 
@@ -32,7 +32,7 @@ class Aviao extends Veiculos
 {
     public function apresentar()
     {
-        return "Este objeto guarda os dados de um Avião da marca: " . $this->marca . " e do ano:" . $this->ano;
+        return "Este objeto guarda os dados de um Avião da marca: " . $this->marca . " e do ano: " . $this->ano;
     }
 }
 
@@ -40,6 +40,6 @@ class Barco extends Veiculos
 {
     public function apresentar()
     {
-        return "Este objeto guarda os dados de um Barco da marca: " . $this->marca . " e do ano:" . $this->ano;
+        return "Este objeto guarda os dados de um Barco da marca: " . $this->marca . " e do ano: " . $this->ano;
     }
 }
